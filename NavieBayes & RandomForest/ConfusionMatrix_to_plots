@@ -1,0 +1,18 @@
+Use this code after successfull confusion matix
+
+library(ggplot2)
+library(reshape2)
+
+then
+cm <- confusionMatrix(predictions,testData$Accident_sev)
+cm_df <- as.data.frame(as.matrix(cm$table))
+
+cm_df_res <- melt(cm_df)
+
+ggplot(cm_df_res, aes(x = variable, y = l1, fill = value))+
+scale_fill_graaident(low = 'white'
+soo and so 
+to config the plots
+
+
+hello
